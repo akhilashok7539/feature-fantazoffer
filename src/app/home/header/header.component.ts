@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
   isLoggedin = false;
   userDetails: string;
   userName: any;
-  name: any;
+  name= 'userName';
   location: any = 'choose your location';
 
   constructor(private router:Router) { }
@@ -23,10 +23,17 @@ export class HeaderComponent implements OnInit {
     }
     if(this.isLoggedin == true)
     {
-      this.userDetails = JSON.parse(localStorage.getItem('userDetais'));
-      this.userName = this.userDetails['username'];
-      this.name   = this.userName.substring(0, this.userName.lastIndexOf("@"));
+      this.userDetails =  JSON.parse(localStorage.getItem('userDetailss'));
+      this.name =  this.userDetails['firstname'];
+      console.log(this.name);
+      
+      if(this.name == null)
+      {
+        this.name = 'user name';
+       }
+      // this.name   = this.userName.substring(0, this.userName.lastIndexOf("@"));
       this.location = localStorage.getItem('location');
+      // this.
       // console.log(this)
       if(this.location == null)
       {
