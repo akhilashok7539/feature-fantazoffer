@@ -1,0 +1,32 @@
+.form-control {
+    padding: 13px;
+    background: linear-gradient(90deg, rgba(174,247,247,1) 0%, rgba(0,212,255,1) 100%);
+    border-radius: 20px;
+    height: 61px;
+    border: 1px solid white;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+   
+}
+button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: none;
+    width: 54%;
+    border-radius: 34px;
+    border: 1px solid white;
+    height: 47px;
+    margin-bottom: 20px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(105, 100, 100);   
+    opacity: 1; /* Firefox */
+  }

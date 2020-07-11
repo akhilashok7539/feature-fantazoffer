@@ -1,0 +1,38 @@
+<div class="page-wrapper" style="height: auto;">
+    <form [formGroup]="loginForm">
+
+        <div class="row">
+            <div class="col-sm-8" style="background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,212,255,1) 100%);">
+                <img src="./assets/img/Annotation 2020-07-10 174536.png" alt="" style="    width: 109%;
+                margin-left: -16px;"> 
+            </div>
+            <div class="col-sm-4" style="padding: 30px;background: linear-gradient(90deg, rgba(251,108,13,1) 0%, rgba(242,166,95,1) 100%);">
+                <div class="col-sm-2 col-sm-6 col-sm-4 col-sm-12" >
+                    <!-- <label for="">User Name</label> -->
+                   <input type="text" [ngClass]="{ 'is-invalid': submitted && f.mobNo.errors }"   [(ngModel)]="mobNo" formControlName="mobNo" style="height: 60px;
+                   margin-bottom: 27px;" class="form-control" placeholder="User Name">
+                   <div *ngIf="submitted && f.mobNo.errors" class="invalid-feedback">
+                    <div *ngIf="f.mobNo.errors.required" style="    margin-top: -21px;
+                    margin-left: 8px;">Contact Person Email ID is required</div>
+                    <div *ngIf="f.mobNo.errors.email" style="    margin-top: -21px;
+                    margin-left: 8px;">Email must be a valid email address</div>
+                </div>
+                </div>
+                <div class="col-sm-2 col-sm-6 col-sm-4 col-sm-12">
+                    <!-- <label for="">Password</label> -->
+                   <input type="password" style="height: 60px;
+                   margin-bottom: 27px;" [(ngModel)]="password" formControlName="password" class="form-control" placeholder="Password">
+                </div>
+
+                <div class="col-sm-2 col-sm-6 col-sm-4 col-sm-12">
+                    <button (click)="userLogin()">Login</button>
+                </div>
+                <div class="col-sm-2 col-sm-6 col-sm-4 col-sm-12">
+                    <p routerLink="/register">Not a user Register</p>
+                </div>
+            </div>
+           
+        </div>
+    </form>
+
+</div>

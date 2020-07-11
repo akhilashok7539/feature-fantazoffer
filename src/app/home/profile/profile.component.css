@@ -1,0 +1,10 @@
+.col-sm-4{
+    padding-top: 10px;
+}
+.btn-primary{
+    padding: 12px;
+    width: 43%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

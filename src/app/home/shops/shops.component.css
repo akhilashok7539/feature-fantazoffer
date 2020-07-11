@@ -1,0 +1,15 @@
+/* @media all and (max-width: 992px)
+{
+    h6{
+        position: absolute;
+        margin-left: 100px;
+    }
+} */
+
+.card{
+    padding: 10px;
+}
+h6{
+    text-align: center;
+    margin-top: 10px;
+}

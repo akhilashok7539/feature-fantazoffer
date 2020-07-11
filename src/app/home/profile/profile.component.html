@@ -1,0 +1,31 @@
+<app-header></app-header>
+
+<div class="page-wrapper">
+    <form [formGroup]="profileform">
+
+    <div class="row" style="margin-top: 10px;padding: 10px;">
+        <div class="col-sm-4  ">
+            <label for="">First Name</label>
+            <input type="text"  [(ngModel)]="firstname" formControlName="firstname" class="form-control">
+        </div>
+        <div class="col-sm-4 ">
+            <label for="">Last Name</label>
+            <input type="text" [(ngModel)]="lstname" formControlName="lstname"  class="form-control">
+        </div>
+        <div class="col-sm-4 ">
+            <label for="">User Name</label>
+            <input  disabled type="text"  [(ngModel)]="username" formControlName="username" class="form-control">
+        </div> 
+        <div class="col-sm-4 ">
+            <label for="">Mobile Number</label>
+            <input type="text"  [(ngModel)]="mobNo" formControlName="mobNo" class="form-control">
+        </div>
+        
+        <div class="col-sm-4">
+            <button class="btn btn-primary" (click)="create()">Save</button>
+        </div>
+    </div>
+    </form>
+
+</div>
+<app-bottomnavigation></app-bottomnavigation>

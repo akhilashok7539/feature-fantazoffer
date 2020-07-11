@@ -1,0 +1,12 @@
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+.col-6,
+.col-md-4{
+    padding-bottom: 10px;
+}
+h6{
+    text-align: center;
+    margin-top: 10px;
+}
