@@ -34,3 +34,17 @@ p {
     color: white;   
     opacity: 1; /* Firefox */
   }
+  @media only screen and (min-width: 768px) and (min-width: 1281px)   {
+      
+    .page-wrapper{
+        display: none;
+    }
+  }
+
+
+  @media only screen and (max-width: 768px)  {
+      
+    .container{
+        display: none;
+    }
+  }
