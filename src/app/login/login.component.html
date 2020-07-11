@@ -1,7 +1,8 @@
-<div class="page-wrapper" style="height: auto;">
+<div class="page-wrapper" style="height: max-content;">
+    
     <form [formGroup]="loginForm">
 
-        <div class="row">
+        <div class="row" style="height: max-content;">
             <div class="col-sm-8" style="background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,212,255,1) 100%);">
                 <img src="./assets/img/Annotation 2020-07-10 174536.png" alt="" style="    width: 109%;
                 margin-left: -16px;"> 
@@ -16,6 +17,8 @@
                     margin-left: 8px;">Contact Person Email ID is required</div>
                     <div *ngIf="f.mobNo.errors.email" style="    margin-top: -21px;
                     margin-left: 8px;">Email must be a valid email address</div>
+                       <div *ngIf="f.mobNo.errors.pattern" style="    margin-top: -21px;
+                       margin-left: 8px;">Email must be a valid email address</div>
                 </div>
                 </div>
                 <div class="col-sm-2 col-sm-6 col-sm-4 col-sm-12">
