@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   userDetails: string;
   userName: any;
   name: any;
-  location: string;
+  location: any = 'choose your location';
 
   constructor(private router:Router) { }
 
