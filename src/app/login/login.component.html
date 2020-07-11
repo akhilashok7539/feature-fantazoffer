@@ -9,16 +9,16 @@
             </div>
             <div class="col-sm-4" style="padding: 30px;background: linear-gradient(90deg, rgba(251,108,13,1) 0%, rgba(242,166,95,1) 100%);">
                 <div class="col-sm-2 col-sm-6 col-sm-4 col-sm-12" >
-                    <!-- <label for="">User Name</label> -->
-                   <input type="text" [ngClass]="{ 'is-invalid': submitted && f.mobNo.errors }"   [(ngModel)]="mobNo" formControlName="mobNo" style="height: 60px;
+                    <!-- <label for="">User Name</label> [ngClass]="{ 'is-invalid': submitted && f.mobNo.errors }"-->
+                   <input type="text"    [(ngModel)]="mobNo" formControlName="mobNo" style="height: 60px;
                    margin-bottom: 27px;" class="form-control" placeholder="User Name">
-                   <div *ngIf="submitted && f.mobNo.errors" class="invalid-feedback">
+                   <!-- <div *ngIf="submitted && f.mobNo.errors" class="invalid-feedback">
                     <div *ngIf="f.mobNo.errors.required" style="    margin-top: -21px;
                     margin-left: 8px;">Contact Person Email ID is required</div>
                     <div *ngIf="f.mobNo.errors.email" style="    margin-top: -21px;
                     margin-left: 8px;">Email must be a valid email address</div>
                        <div *ngIf="f.mobNo.errors.pattern" style="    margin-top: -21px;
-                       margin-left: 8px;">Email must be a valid email address</div>
+                       margin-left: 8px;">Email must be a valid email address</div> -->
                 </div>
                 </div>
                 <div class="col-sm-2 col-sm-6 col-sm-4 col-sm-12">
